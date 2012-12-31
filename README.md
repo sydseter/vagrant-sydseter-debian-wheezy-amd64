@@ -28,3 +28,6 @@ See: [the packaging documentation](vagrant-sydseter-debian-wheezy-amd64/blob/mas
 ###Installing the vagrant box
     # From the root of this repository, do the following from the cmd.
     vagrant up
+###Post configuration
+You can configure the Vagrant file to clone out your git repositories before the
+box boots. see [the git service config](vagrant-sydseter-debian-wheezy-amd64/blob/master/etc/git.local.yml) for details.
