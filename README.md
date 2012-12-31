@@ -1,6 +1,6 @@
 ## vagrant-sydseter-debian-wheezy-amd64
 
-Startsiden Vagrant virtualbox package for debian wheezy amd64 arch.
+Vagrant virtualbox configuration for debian wheezy amd64 arch.
 Minimal provisioning for debian wheezy environments
 
 ###Author
