@@ -22,8 +22,7 @@ build-essential 11.5<br>
 virtualbox-guest-utils 4.1.18-dfsg-1.1<br>
 ssh 1:6.0p1-3
 ###Installation process
-is documented in [images](vagrant-sydseter-debian-wheezy-amd64/blob/mass
-    ter/doc/images)
+is documented in [images](vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/images)
 ###Configuration done before packaging
 See: [the packaging documentation](vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/README.md) page for details 
 ###Installing the vagrant box
