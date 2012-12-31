@@ -171,7 +171,7 @@
 
     vagrant package vagrant-sydseter-debian-wheezy-amd64 --base vagrant-sydseter-debian-wheezy-amd64 --output vagrant-sydseter-debian-wheezy-amd64.box --include doc,ssh
 
-    # Moved box to "http://www.sydseter.com/vagrant/vagrant-sydsete
-    r-debian-wheezy-amd64.box
+    # Moved box to:
+    # http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd64.box
 ####Testing the box
     vagrant up
