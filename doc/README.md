@@ -40,7 +40,8 @@
 
     sudo apt-get install virtualbox-guest-utils
 
-    # setup ~/vagrant-sydseter-debian-wheezy-amd64 as a shared folder with the name share the folder will be accessible from /media/sf_share for root
+    # setup ~/vagrant-sydseter-debian-wheezy-amd64 as a shared folder with 
+    # the name share the folder will be accessible from /media/sf_share for root
 
     # retart the vm image
 
@@ -169,6 +170,7 @@
     # Ctrl-S as ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/README.md
 
     vagrant package vagrant-sydseter-debian-wheezy-amd64 --base vagrant-sydseter-debian-wheezy-amd64 --output vagrant-sydseter-debian-wheezy-amd64.box --include doc,ssh
-
+    # Moved box to "http://www.sydseter.com/vagrant/vagrant-sydsetee
+    r-debian-wheezy-amd64.box
 ####Testing the box
     vagrant up
