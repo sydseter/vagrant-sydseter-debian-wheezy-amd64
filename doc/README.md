@@ -169,7 +169,7 @@
     # Ctrl-S as ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/doc/PACKAGING.md
     # Ctrl-S as ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/README.md
 
-    vagrant package vagrant-sydseter-debian-wheezy-amd64 --base vagrant-sydseter-debian-wheezy-amd64 --output vagrant-sydseter-debian-wheezy-amd64.box --include doc,ssh
+    vagrant package vagrant-sydseter-debian-wheezy-amd64 --base vagrant-sydseter-debian-wheezy-amd64 --output vagrant-sydseter-debian-wheezy-amd64.box
 
     # Moved box to:
     # http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd64.box
