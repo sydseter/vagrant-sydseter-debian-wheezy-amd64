@@ -16,10 +16,10 @@ amd64
 ###Vagrant packaging Guidlines
 [vagrantup.com](http://vagrantup.com/v1/docs/base_boxes.html "Vagrant packaging guidelines")
 ###Installed packages
-sudo 1.8.5p2-1
-linux-headers-3.2.0-4-amd64
-build-essential 11.5
-virtualbox-guest-utils 4.1.18-dfsg-1.1
+sudo 1.8.5p2-1<br>
+linux-headers-3.2.0-4-amd64<br>
+build-essential 11.5<br>
+virtualbox-guest-utils 4.1.18-dfsg-1.1<br>
 ssh 1:6.0p1-3
 ###Installation process
 is documented in images in the same folder as this README.md file
