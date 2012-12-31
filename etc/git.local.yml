@@ -1,0 +1,22 @@
+# This is a template yaml file for downloading git repsoitories for the 
+# vagrant boxes. Please create git.local.yml with this as the base.
+# the config supports the following parameters
+# === git-src
+# The location where you have all your git repositories
+# === repositories
+# An array of all the names of the repositories that you need to clone
+# Example:
+#   repositories:
+#     - 'vm-utils'
+#     - 'ruby-git-services'
+# to your [git-src] directory
+# === github
+# The git url to repositories on github
+# example: git@github:sydseter
+# Author:: Johan Sydseter (mailto:johan.sydseter@startsiden.no)
+---
+vagrant:
+  src: '/home/user/src/sydseter'
+  github:   'git@github.com:sydseter'
+  repositories:
+    - ''
