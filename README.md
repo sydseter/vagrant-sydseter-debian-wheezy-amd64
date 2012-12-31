@@ -30,4 +30,4 @@ See: [the packaging documentation](vagrant-sydseter-debian-wheezy-amd64/blob/mas
     vagrant up
 ###Post configuration
 You can configure the Vagrant file to clone out your git repositories before the
-box boots. see [the git service config](vagrant-sydseter-debian-wheezy-amd64/blob/master/etc/git.local.yml) for details.
+box boots. see [the git service config](vagrant-sydseter-debian-wheezy-amd64/blob/master/etc/git.yml) for details.
