@@ -78,7 +78,6 @@
     # change UseDNS to no
 
 ###Reducing size
-    # set up ~/vagrant-sydseter-debian-wheezy-amd64 as a shared folder with the name 'share' and boot into the vm image
 
     sudo su
     
@@ -108,11 +107,10 @@
     sh cleanup.sh
     exit
 
-    # shutdown vm image and remove shared folder
 
 ###Packaging box
 
-    # shutdown vm image
+    # shutdown vm image and remove shared folder
 
     # on the host machine
 
@@ -163,7 +161,8 @@
 ####Adding documentation
 
     mkdir -p ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/doc/images
-    # copied the screen shots from the installation process to ~/vagrant-sydseter-debian-wheezy-amd64-puppet/ssh/id_rsa/doc/images
+    # copied the screen shots from the installation process
+    # to ~/vagrant-sydseter-debian-wheezy-amd64-puppet/ssh/id_rsa/doc/images
 
 #####Saving documentation
     # Ctrl-S as ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/doc/PACKAGING.md
