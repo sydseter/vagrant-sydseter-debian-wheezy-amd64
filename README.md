@@ -25,7 +25,7 @@ ssh 1:6.0p1-3
 is documented in images in the same folder as this README.md file
 After the installation process ends, unmount the debian ISO image.
 ###Configuration done before packaging
-See: [doc/README.md](the packaging documentation) page for details 
+See: [the packaging documentation](doc/README.md) page for details 
 ###Installing the vagrant box
     # From the root of this repository, do the following from the cmd.
     vagrant up
