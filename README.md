@@ -4,7 +4,7 @@ Startsiden Vagrant virtualbox package for debian wheezy amd64 arch.
 Minimal provisioning for debian wheezy environments
 
 ###Author
-Johan Sydseter <johan.sydseter@startsiden.no>
+[Johan Sydseter](http://www.sydseter.com)
 ###OS
 Debian-Linux
 ###Arch
