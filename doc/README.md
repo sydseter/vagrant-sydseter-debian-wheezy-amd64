@@ -80,13 +80,20 @@
 
 ###Reducing size
 
+   git clone https://github.com/johansyd/vm-utils ~/vm-utils
+    # set up ~/vm-utils as a shared folder with the name 'share' and boot into the vm image
+    # install tool for deleting empty space
+
+    sudo apt-get install zerofree
+
     sudo su
+
+    cd /media/sf_share
+    
+    ./freespace.sh
     
     # Boot into single user mode
     init 1
-
-    # install toll for deleting empty space
-    sudo apt-get install zerofree
 
     # make vm image read-only
     mount -o remount,ro /dev/sda1
@@ -95,19 +102,17 @@
     zerofree /dev/sda1
 
     # make vm image writeable
-    mount -o remount,ro /dev/sda1
-
+    mount -o remount,rw /dev/sda1
+    
     sudo apt-get remove zerofree
-
     exit
     
     # login to the vm image again
 
     sudo su
-    cd /media/sf_share/utils
-    sh cleanup.sh
+    cd /media/sf_share
+    ./freespace.sh
     exit
-
 
 ###Packaging box
 
