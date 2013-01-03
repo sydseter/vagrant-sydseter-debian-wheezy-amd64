@@ -80,8 +80,10 @@
 
 ###Reducing size
 
-   git clone https://github.com/johansyd/vm-utils ~/vm-utils
-    # set up ~/vm-utils as a shared folder with the name 'share' and boot into the vm image
+    git clone https://github.com/johansyd/vm-utils ~/vm-utils
+
+set up ~/vm-utils as a shared folder with the name 'share' and boot into the vm image
+
     # install tool for deleting empty space
 
     sudo apt-get install zerofree
