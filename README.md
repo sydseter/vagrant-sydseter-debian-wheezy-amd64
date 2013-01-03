@@ -27,9 +27,9 @@ is documented in [images](vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/i
 See: [the packaging documentation](vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/README.md) page for details 
 ###Installing the vagrant box
 
-If you are running Mac OS or Windows, please install woth vagrant and virtualbox.
-The n from the root of this repository, start the environment from the command line
-with 'vagrant up'.
+If you are running Mac OS or Windows, please install both vagrant and virtualbox.
+Then from the root of this repository, start the environment from the 
+command line with 'vagrant up'.
 
 ####Debian/Ubuntu linux
     sudo apt-get install virtualbox
