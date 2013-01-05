@@ -118,9 +118,11 @@ set up ~/vm-utils as a shared folder with the name 'share' and boot into the vm 
 
 ###Packaging box
 
-    # shutdown vm image and remove shared folder
+Shutdown vm image and remove shared folder.
 
-    # on the host machine
+The ssh keys should be available from ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa
+
+On the host machine create a Vagrantfile and add configuration.
 
     cd ~/vagrant-sydseter-debian-wheezy-amd64
 
@@ -128,13 +130,11 @@ set up ~/vm-utils as a shared folder with the name 'share' and boot into the vm 
 
     vim Vagrantfile
 
-    # see to it that the ssh private key exist:
-    # ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa
 
     # Add this to the Vagrantfile
-        require './utils/git_cloningservice.rb'
+        require File.dirname(__FILE__) + '/services/git_cloningservice.rb'
         # etc dir for abcn vagrant yaml configuration files
-        git_etc = File.dirname(__FILE__) + '/utils/etc'
+        git_etc = File.dirname(__FILE__) + '/etc'
 
         # yaml configuration file suffix
         git_config_suffix = 'git'
