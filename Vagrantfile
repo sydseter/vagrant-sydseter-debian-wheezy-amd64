@@ -4,7 +4,7 @@
 #
 # Author:: Johan Sydseter (mailto:johan.sydseter@startsiden.no)
 # 
-require File.dirname(__FILE__) + 'services/git_cloningservice.rb'
+require File.dirname(__FILE__) + '/services/git_cloningservice.rb'
 # etc dir for abcn vagrant yaml configuration files 
 git_etc = File.dirname(__FILE__) + '/etc'
 
