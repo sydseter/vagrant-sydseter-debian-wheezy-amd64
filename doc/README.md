@@ -120,65 +120,64 @@ set up ~/vm-utils as a shared folder with the name 'share' and boot into the vm 
 
 Shutdown vm image and remove shared folder.
 
+
+    vagrant package vagrant-sydseter-debian-wheezy-amd64 --base vagrant-sydseter-debian-wheezy-amd64 --output vagrant-sydseter-debian-wheezy-amd64.box
+
+    # Moved box to:
+    # http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd64.box
+
+###Testing the box
+
 The ssh keys should be available from ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa
 
 On the host machine create a Vagrantfile and add configuration.
 
     cd ~/vagrant-sydseter-debian-wheezy-amd64
 
+    git clone git@github.com:johansyd/ruby-git-services.git services
+
+    cp -r ./services/etc ./etc
+
     vagrant init
 
     vim Vagrantfile
 
+Add this to the Vagrantfile
 
-    # Add this to the Vagrantfile
-        require File.dirname(__FILE__) + '/services/git_cloningservice.rb'
-        # etc dir for abcn vagrant yaml configuration files
-        git_etc = File.dirname(__FILE__) + '/etc'
+    require File.dirname(__FILE__) + '/services/git_cloningservice.rb'
+    # etc dir for abcn vagrant yaml configuration files
+    git_etc = File.dirname(__FILE__) + '/etc'
 
-        # yaml configuration file suffix
-        git_config_suffix = 'git'
+    # yaml configuration file suffix
+    git_config_suffix = 'git'
 
-        # Load the config
-        git_cloning_service = Git::CloningService.new(
-          git_etc,
-          git_config_suffix)
+    # Load the config
+    git_cloning_service = Git::CloningService.new(
+      git_etc,
+      git_config_suffix)
 
-        # Clone out the repositories if necessary
-        git_cloning_service.clone
+    # Clone out the repositories if necessary
+    git_cloning_service.clone
 
-        # Get the location of the source folder where all the git repositories are stored
-        # reuse this variable as a base for all shared vagrant folders
-        git_src = git_cloning_service.src
+    # Get the location of the source folder where all the git repositories are stored
+    # reuse this variable as a base for all shared vagrant folders
+    git_src = git_cloning_service.src
 
-        Vagrant::Config.run do |config|
+    Vagrant::Config.run do |config|
 
-            # Every Vagrant virtual environment requires a box to build off of.
-            config.vm.box = 'vagrant-sydseter-debian-wheezy-amd64'
-            config.ssh.username = 'vagrant'
-            config.ssh.host = '127.0.0.1'
+        # Every Vagrant virtual environment requires a box to build off of.
+        config.vm.box = 'vagrant-sydseter-debian-wheezy-amd64'
+        config.ssh.username = 'vagrant'
+        config.ssh.host = '127.0.0.1'
 
-            # Private ssh key
-            config.ssh.private_key_path = File.dirname(__FILE__) + '/ssh/id_rsa'
+        # Private ssh key
+        config.ssh.private_key_path = File.dirname(__FILE__) + '/ssh/id_rsa'
             
-            # The url from where the 'config.vm.box' box will be fetched if it
-            # doesn't already exist on the user's system.
-            config.vm.box_url = "http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd64.box"
-        end
+        # The url from where the 'config.vm.box' box will be fetched if it
+        # doesn't already exist on the user's system.
+        config.vm.box_url = "http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd64.box"
+     end
 
-####Adding documentation
+Start the vagrant box
 
-    mkdir -p ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/doc/images
-    # copied the screen shots from the installation process
-    # to ~/vagrant-sydseter-debian-wheezy-amd64-puppet/ssh/id_rsa/doc/images
-
-#####Saving documentation
-    # Ctrl-S as ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/doc/PACKAGING.md
-    # Ctrl-S as ~/vagrant-sydseter-debian-wheezy-amd64/ssh/id_rsa/README.md
-
-    vagrant package vagrant-sydseter-debian-wheezy-amd64 --base vagrant-sydseter-debian-wheezy-amd64 --output vagrant-sydseter-debian-wheezy-amd64.box
-
-    # Moved box to:
-    # http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd64.box
-####Testing the box
     vagrant up

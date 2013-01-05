@@ -25,6 +25,11 @@ ssh 1:6.0p1-3
 is documented in [images](vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/images)
 ###Configuration done before packaging
 See: [the packaging documentation](vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/README.md) page for details 
+###Security
+
+username: vagrant
+password: vagrant
+
 ###Installing the vagrant box
 
 If you are running Mac OS or Windows, please install both vagrant and virtualbox.
