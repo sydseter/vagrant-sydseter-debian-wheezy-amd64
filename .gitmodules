@@ -7,3 +7,6 @@
 [submodule "t/system_steps"]
 	path = t/system_steps
 	url = git@github.com:johansyd/test-bdd-cucumber-common-system-tests-perl.git
+[submodule "tests/system_steps"]
+	path = tests/system_steps
+	url = git@github.com:johansyd/test-bdd-cucumber-common-system-tests-perl.git
