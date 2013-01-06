@@ -72,11 +72,31 @@
 
     chmod 0700 ~/.ssh
 
+###Installing and configuring BDD testing
+
+Installing libtest-bdd-cucumber-perl
+
+    sudo apt-get install libtest-bdd-cucumber-perl
+
 ###Tweeks
 
     pico /etc/ssh/sshd_config
 
-    # change UseDNS to no
+Change UseDNS to the value no or add the statement 'UseDNS no' if if UseDNS
+doesn't exist
+
+    UseDNS no
+
+Solving 'stdin: is not a tty' error
+
+    sudo su
+    pico /root/.profile
+
+Change the statement 'mesg n' to the following
+
+    if `tty -s`; then
+        mesg n
+    fi
 
 ###Reducing size
 
