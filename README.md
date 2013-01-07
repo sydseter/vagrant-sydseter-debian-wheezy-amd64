@@ -13,6 +13,8 @@ amd64
 [debian.org](http://cdimage.debian.org/cdimage/wheezy_di_beta4/amd64/iso-cd/debian-wheezy-DI-b4-amd64-CD-1.iso "Debian-Wheezy amd64 ISO image")
 ###ISO image - build date:
 17-Nov-2012 22:05
+###Vagrant box size
+423 MB
 ###Vagrant packaging Guidlines
 [vagrantup.com](http://vagrantup.com/v1/docs/base_boxes.html "Vagrant packaging guidelines")
 ###Installed packages
