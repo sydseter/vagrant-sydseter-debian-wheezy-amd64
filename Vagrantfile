@@ -6,7 +6,7 @@
 # 
 require File.dirname(__FILE__) + '/services/git_cloningservice.rb'
 # etc dir for abcn vagrant yaml configuration files 
-git_etc = File.dirname(__FILE__) + '/etc'
+git_etc = File.dirname(__FILE__) + '/config'
 
 # yaml configuration file suffix
 git_config_suffix = 'git'
@@ -128,6 +128,6 @@ end
 #Run BDD system tests
 Vagrant::Config.run do |config|
   config.vm.provision :shell do |shell|
-    shell.inline = "prove -v /vagrant/tests"
+    shell.inline = "perl /vagrant/tests/001.vagrant_system_tests.t"
   end
 end
