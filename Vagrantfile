@@ -6,7 +6,7 @@
 # 
 require File.dirname(__FILE__) + '/services/git_cloningservice.rb'
 # etc dir for abcn vagrant yaml configuration files 
-git_etc = File.dirname(__FILE__) + '/config'
+git_etc = File.dirname(__FILE__) + '/etc'
 
 # yaml configuration file suffix
 git_config_suffix = 'git'
