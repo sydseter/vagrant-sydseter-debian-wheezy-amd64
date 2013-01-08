@@ -1,7 +1,7 @@
 # Author: Johan Sydseter <johan.sydseter@startsiden.no>
 ---
 autoinstallver: 1
-name: vagrant-debian-wheezy-amd64
+name: vagrant-sydseter-debian-wheezy-amd64
 version: 13.01.01-01
 
 exludeext:
@@ -11,10 +11,10 @@ exludeext:
   - .gitmodules
 
 installto:
-  etc: /usr/local/vagrant-debian-wheezy-amd64/etc
-  services: /usr/local/vagrant-debian-wheezy-amd64/services
-  ssh: /usr/local/vagrant-debian-wheezy-amd64/ssh
-  tests: /usr/local/vagrant-debian-wheezy-amd64/tests
+  etc: /usr/local/vagrant-sydseter-debian-wheezy-amd64/etc
+  services: /usr/local/vagrant-sydseter-debian-wheezy-amd64/services
+  ssh: /usr/local/vagrant-sydseter-debian-wheezy-amd64/ssh
+  tests: /usr/local/vagrant-sydseter-debian-wheezy-amd64/tests
   bin: /usr/local/bin
 
 depends:
@@ -32,7 +32,7 @@ excludedir:
 excludefile:
   - Vagrantfile
 
-installdir: /usr/share/doc/vagrant-debian-wheezy-amd64
+installdir: /usr/share/doc/vagrant-sydseter-debian-wheezy-amd64
 
 tests: t/
 test_requires:

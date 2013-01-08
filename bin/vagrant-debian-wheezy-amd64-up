@@ -1,3 +1,0 @@
-#!/bin/sh
-cd /usr/local/etc/vagrant-debian-wheezy-amd64
-vagrant up
