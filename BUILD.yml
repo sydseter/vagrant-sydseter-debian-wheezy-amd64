@@ -1,0 +1,40 @@
+# Author: Johan Sydseter <johan.sydseter@startsiden.no>
+---
+autoinstallver: 1
+name: vagrant-debian-wheezy-amd64
+version: 13.01.01-01
+
+exludeext:
+  - .md
+  - .git
+  - .gitignore
+  - .gitmodules
+
+installto:
+  etc: /usr/local/vagrant-debian-wheezy-amd64/etc
+  services: /usr/local/vagrant-debian-wheezy-amd64/services
+  ssh: /usr/local/vagrant-debian-wheezy-amd64/ssh
+  tests: /usr/local/vagrant-debian-wheezy-amd64/tests
+  bin: /usr/local/bin
+
+depends:
+  - viritualbox
+  - vagrant
+
+excludedir:
+  - t
+  - etc
+  - bin
+  - services
+  - ssh
+  - tests
+  - utils
+excludefile:
+  - Vagrantfile
+
+installdir: /usr/share/doc/vagrant-debian-wheezy-amd64
+
+tests: t/
+test_requires:
+  - viritualbox
+  - vagrant
