@@ -1,7 +1,25 @@
 #!/bin/bash
+# ===Author
+# Johan Sydseter
+# ===Description
 # This scipt wraps the vagrant command for the 
-# vagrant-debian-wheezy-amd64 box.
-# Be aware that you only can use a limited amount of args
-cd /usr/local/etc/vagrant-sydseter-debian-wheezy-amd64
-vagrant $1 $2 $3 $4 $5 $6 $7 $8
+# vagrant-debian-wheezy-amd64-puppet box.
+# It changes directory to this package's install dir and issues the command
+# vagrant with all args.
+# If the install dir does not exist, then the vagrant command is made in the
+# working directory from where you called this script
+INSTALL_DIR=/usr/local/etc/vagrant-sydseter-debian-wheezy-amd64
+
+if [ ! -d $INSTALL_DIR ]; then
+    echo 'WARNING: '$INSTALL_DIR' does not exist.';
+    echo 'Executing vagrant from your working directory';
+    vagrant $@;
+    exit 0;
+fi
+
+echo 'Changing directory to '$INSTALL_DIR;
+
+cd $INSTALL_DIR;
+
+vagrant $@;
 
