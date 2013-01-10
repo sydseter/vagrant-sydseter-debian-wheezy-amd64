@@ -22,7 +22,7 @@ depends:
 excludedir:
   - utils
 
-installdir: /usr/local/vagrant-sydseter-debian-wheezy-amd64
+installdir: /usr/local/etc/vagrant-sydseter-debian-wheezy-amd64
 
 tests: t/
 test_requires:
