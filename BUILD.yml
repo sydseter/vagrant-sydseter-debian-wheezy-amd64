@@ -12,7 +12,6 @@ exludeext:
 
 installto:
   doc: /usr/share/doc/vagrant-sydseter-debian-wheezy-amd64
-  t: /usr/share/doc/vagrant-sydseter-debian-wheezy-amd64
   bin: /usr/local/bin
 
 depends:
