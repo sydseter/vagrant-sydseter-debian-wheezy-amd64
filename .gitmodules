@@ -4,6 +4,3 @@
 [submodule "services"]
 	path = services
 	url = git@github.com:johansyd/ruby-git-services.git
-[submodule "t/system_steps"]
-	path = t/system_steps
-	url = git@github.com:johansyd/test-bdd-cucumber-common-system-tests-perl.git
