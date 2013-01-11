@@ -16,7 +16,7 @@
 # Author:: Johan Sydseter (mailto:johan.sydseter@startsiden.no)
 ---
 vagrant:
-  src: '/home/user/src'
+  src: '/tmp'
   github:   'git@github.com:sydseter'
   repositories:
     - ''
