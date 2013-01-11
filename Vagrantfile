@@ -128,6 +128,6 @@ end
 #Run BDD system tests
 Vagrant::Config.run do |config|
   config.vm.provision :shell do |shell|
-    shell.inline = "perl /vagrant/tests/001.vagrant_system_tests.t"
+    shell.inline = "perl /vagrant/t/001.vagrant_system_tests.t"
   end
 end
