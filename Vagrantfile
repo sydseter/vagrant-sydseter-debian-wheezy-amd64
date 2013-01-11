@@ -38,7 +38,7 @@ Vagrant::Config.run do |config|
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = 'http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd65.box'
+  config.vm.box_url = 'http://www.sydseter.com/vagrant/vagrant-sydseter-debian-wheezy-amd64.box'
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
