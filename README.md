@@ -22,7 +22,7 @@ sudo 1.8.5p2-1<br>
 linux-headers-3.2.0-4-amd64<br>
 build-essential 11.5<br>
 virtualbox-guest-utils 4.1.18-dfsg-1.1<br>
-ssh 1:6.0p1-3
+ssh 1:6.0p1-3<br>
 libtest-bdd-cucumber-perl 0.11-1<br>
 ###Installation process
 is documented in images [here](vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/images)
