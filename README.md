@@ -25,7 +25,7 @@ virtualbox-guest-utils 4.1.18-dfsg-1.1<br>
 ssh 1:6.0p1-3<br>
 libtest-bdd-cucumber-perl 0.11-1<br>
 ###Installation process
-is documented in images [here](./vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/images)
+is documented in images [here](http://www.github.com/johansyd/vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/images)
 ###Configuration done before packaging
 See: [the packaging documentation](http://www.github.com/johansyd/vagrant-sydseter-debian-wheezy-amd64/blob/master/doc/README.md) page for details 
 ###Security
